@@ -1,7 +1,16 @@
 {% extends 'bootstrap/base.html' %}
 
+{% block head %}
+{{ super() }}
+    <link rel="icon" href="{{ url_for('static', filename='assets/globe.png') }}">
+{% endblock %}
+
 {% block title %}
-    <title>Test</title>
+    {% if title %}
+        {{title}}
+    {% else %}
+        Testing Flask
+    {% endif %}
 {% endblock %}
 
 {% block navbar %}
