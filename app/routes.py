@@ -6,6 +6,6 @@ def index():
     return 'Hello Flask'
 
 
-@app.route('/')
+@app.route('/about')
 def about():
     return 'About works'
