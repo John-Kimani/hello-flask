@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+    <div class="row">
+        <div class="col sm 12">
+            <h1>Page not found</h1>
+            <p>The page you have requested cannot be found</p>
+            <p>
+                Go to <a href="{{ url_for('index') }}">Home Page</a>
+            </p>
+        </div>
+    </div>
+{% endblock %}
