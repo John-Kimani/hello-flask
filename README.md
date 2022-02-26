@@ -3,7 +3,8 @@
 
 hello-flask is a learn-flask web application.
 
-
+# App screenshot
+![hello-flask](app/static/assets/hello_flask.png)
 ## Installation
 
 Install github-search application with npm
