@@ -29,7 +29,7 @@ mkvirtualenv virtual
     ```bash
     (virtual)$ touch .env
     ```
-    * Add the following line to the file as seen in ```.en-template```
+    * Add the following line to the file as seen in ```.env-template```
     ```bash 
     SECRET_KEY=
     ```
