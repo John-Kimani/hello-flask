@@ -1,11 +1,18 @@
 from app import app
 from flask import render_template
 from app.forms import LoginForm, RegistationForm
+from .requests import get_news
 
 
 @app.route('/')
 def index():
-    return render_template('index.html', title='Home')
+    '''
+    View root page that retuns index page and data
+    '''
+    # getting new sources
+    news_sources = get_news('general')
+    print(news_sources)
+    return render_template('index.html', title='Home', news_sources=news_sources)
 
 
 @app.route('/about')
